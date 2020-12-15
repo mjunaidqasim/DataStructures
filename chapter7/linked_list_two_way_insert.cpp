@@ -66,9 +66,9 @@ class TwoWayLinkedList
 			// Traversing 2 way Linked List -> In forward direction
 			current = start;
 			prev = start;
-			while(current -> next != NULL)
+			while(prev -> next != NULL)
 			{
-				if(current -> data == afterValue) 
+				if(prev-> data == afterValue) 
 				{
 					cout << "\nNumber FOUND:" << current -> data;
 					// Have to insert new node between prev & current
